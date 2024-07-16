@@ -1,0 +1,21 @@
+{
+  "name": "wadie",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.6",
+    "matter-js": "^0.20.0",
+    "odometer": "^0.4.8",
+    "splitting": "^1.1.0"
+  }
+}
