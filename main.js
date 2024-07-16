@@ -207,6 +207,7 @@ class Home{
             ease: 'power2.inOut',
             onComplete: () => this.initFlip()
         })
+            .to('.loader-video', {opacity: 1, duration: 0.5}, "<")
             .to(document.querySelector('.loader-statement').querySelectorAll('.char'), {
                 y: (i, el) => gsap.utils.random(-50, 50),
                 x: (i, el) => gsap.utils.random(-50, 50),
