@@ -7,7 +7,7 @@ import {Internship} from "./internship.js";
 import {Faq} from "./faq.js";
 import {Community} from "./community.js";
 import {NotFound} from "./404.js";
-import {Legal} from "./legal.js";
+import {Vision} from "./vision.js";
 
 
 gsap.config({
@@ -114,10 +114,10 @@ barba.init({
             },
         },
         {
-            namespace: "legal",
+            namespace: "vision",
             afterEnter(data) {
                 globalInstance = new Global(data.next.container);
-                new Legal(data.next.container);
+                new Vision(data.next.container);
             },
         },
         {

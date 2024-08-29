@@ -185,6 +185,7 @@ export class Home{
 
         this.lessons = [...this.container.querySelectorAll('.lessons-item')];
         this.lessonsVisuals = [...this.container.querySelectorAll('.lessons-visuals-item')]
+        this.lessonsVisuals[0].classList.add('active')
         this.lessons.forEach((link, index) => {
             const linkText = link.querySelectorAll('.char')
             const inactiveVisuals = this.lessonsVisuals.filter((item, indexN) => indexN !== index)
@@ -193,6 +194,8 @@ export class Home{
             //let tlVisual = gsap.timeline({paused: true})
             // tlVisual.to(inactiveVisuals, {opacity: 0, duration: 0.5})
             // tlVisual.to(this.lessonsVisuals[index], {opacity: 1, duration: 0.5}, ">")
+
+
 
             link.addEventListener('mouseover', () => {
                 tllink.timeScale(1)
